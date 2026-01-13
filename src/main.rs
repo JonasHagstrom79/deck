@@ -16,5 +16,5 @@ fn main() {
         }
     }
     let deck: Deck = Deck { cards: cards };
-    println!("Here is your deck: {:?}", deck);
+    println!("Here is your deck: {:#?}", deck);
 }
