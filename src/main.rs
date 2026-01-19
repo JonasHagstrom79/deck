@@ -17,9 +17,14 @@ impl Deck {
         }
         Deck { cards }
     }
+
+    fn shuffel(self) {
+
+    }
 }
 
 fn main() {
     let deck = Deck::new();
+    deck.shuffel();
     println!("Here is your deck: {:#?}", deck);
 }
