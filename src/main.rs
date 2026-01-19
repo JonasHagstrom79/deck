@@ -15,8 +15,7 @@ impl Deck {
                 cards.push(card);
             }
         }
-        let deck: Deck = Deck { cards: cards };
-        return deck;
+        Deck { cards }
     }
 }
 
