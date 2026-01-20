@@ -1,4 +1,4 @@
-use rand::{thread_rng, seq::SliceRandom};
+use rand::{ rng, seq::SliceRandom};
 #[derive(Debug)]
 struct Deck {
     cards: Vec<String>,
@@ -20,7 +20,8 @@ impl Deck {
     }
 
     fn shuffel(&mut self) {
-
+        let mut rbg = rng();
+        self.cards.shuffle(&mut rbg);
     }
 }
 
